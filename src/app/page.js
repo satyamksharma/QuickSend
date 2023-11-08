@@ -21,7 +21,7 @@ export default function Home() {
     };
 
     return (
-        <main className={` ${messenger === 'whatsapp' ? 'bg-[url('./whatsapp.svg')]' : ''} min-h-screen flex flex-col items-center justify-center text-white`}>
+        <main className='bg-gradient-to-b from-indigo-900 to-gray-800 min-h-screen flex flex-col items-center justify-center text-white'>
             <h1 className='text-4xl font-extrabold mb-8'>QuickSend</h1>
             <div className='mb-8'>
                 <button
@@ -45,10 +45,7 @@ export default function Home() {
             </div>
             <div className='w-80'>
                 <PhoneInput
-                    classNames={{
-                        countrySelect: 'my-custom-country-select',
-                        input: 'my-custom-input',
-                    }}
+                    className='text-md mb-4'
                     placeholder='Enter phone number'
                     countrySelectProps={{ unicodeFlags: true }}
                     value={value}
@@ -75,7 +72,7 @@ export default function Home() {
             </div>
             <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center text-gray-400 '>
                 <p className=''>
-                    &copy;{' '}
+                    &copy; Copyright 2023{' '}
                     <a
                         href='https://github.com/SarthakSKumar/QuickSend'
                         target='_blank'
