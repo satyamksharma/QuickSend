@@ -21,7 +21,7 @@ export default function Home() {
     };
 
     return (
-        <main className='bg-gradient-to-b from-indigo-900 to-gray-800 min-h-screen flex flex-col items-center justify-center text-white'>
+        <main className={` ${messenger === 'whatsapp' ? 'bg-[url('./whatsapp.svg')]' : ''} min-h-screen flex flex-col items-center justify-center text-white`}>
             <h1 className='text-4xl font-extrabold mb-8'>QuickSend</h1>
             <div className='mb-8'>
                 <button
